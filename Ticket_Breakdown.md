@@ -34,16 +34,16 @@ Table structure :
 |agent_shift_id|agent_id|shift_id|
 
 
---- Ticket 1 ---:
+# --- Ticket 1 ---:
 add a custom_agent_id to Agent_shifts table; should default to agent_shift_id for past records or if no custom id is provided.
 `agents` table:
 |agent_shift_id|agent_id|shift_id|custom_agent_id|
 
 
---- Ticket 2 ---:
+# --- Ticket 2 ---:
 modify `getShiftsByFacility` to include custom_agent_id in the response for agent metadata; depends on ticket 1
 
 `getShiftsByFacility`  should now include custom_agent_id when populating the agent metadata when joining the `Shifts` table with the `Agent_shifts` table 
 
---- Ticket 3 ---:
+# --- Ticket 3 ---:
 modify `generateReport` to include custom_agent_id in the report; depends on ticket 1
