@@ -21,22 +21,22 @@ Assumptions:
 
 Table structure :
 
-## Shifts table ## :
+`shifts` table :
 |shift_id|start|end|facility_id|other_columns|
 
-## Facilities table ## :
+`facilities` table:
 |facility_id|name|other_columns|
 
-## Agents table ## :
+`agents` table:
 |agent_id|name|other_columns
 
-## Agent_shifts table ## :
+`agent_shifts` table:
 |agent_shift_id|agent_id|shift_id|
 
 
 --- Ticket 1 ---:
 add a custom_agent_id to Agent_shifts table; should default to agent_shift_id for past records or if no custom id is provided.
-## Agent_shifts table ## :
+`agents` table:
 |agent_shift_id|agent_id|shift_id|custom_agent_id|
 
 
