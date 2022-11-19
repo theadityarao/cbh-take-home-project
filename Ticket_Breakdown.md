@@ -22,16 +22,16 @@ Assumptions:
 Table structure :
 
 `shifts` table :
-|shift_id|start|end|facility_id|other_columns|
+|shift_id |start |end |facility_id |other_columns
 
 `facilities` table:
-|facility_id|name|other_columns|
+|facility_id |name |other_columns
 
 `agents` table:
-|agent_id|name|other_columns
+|agent_id |name |other_columns
 
 `agent_shifts` table:
-|agent_shift_id|agent_id|shift_id|
+|agent_shift_id |agent_id |shift_id
 
 
 #### --- Ticket 1 ---:
