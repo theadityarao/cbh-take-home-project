@@ -49,3 +49,11 @@ describe("deterministicPartitionKey", () => {
     expect(trivialKey).toBe("1");
   });
 });
+
+// Test case 7
+describe("deterministicPartitionKey", () => {
+  it("non string partitionKey 2", () => {
+    const trivialKey = deterministicPartitionKey({partitionKey: {test:1}});
+    expect(trivialKey).toBe("{\"test\":1}");
+  });
+});
